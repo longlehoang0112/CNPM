@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Danh sach dich vu </title>
+    <link href="{{ url_for('static',filename='css/style.css')}}" rel="stylesheet">
+</head>
+<body>
+ <div class ="container ">
+   <h1 class ="subject">DANH MUC DICH VU</h1>
+
+   <table border="1" class =" product">
+      <tr>
+          <th></th>
+          <th>Ma dich vu</th>
+          <th>Ten dich vu</th>
+          <th>Mo ta</th>
+          <th>Gia dich vu</th>
+      </tr>
+      {% for p in products %}
+      <tr>
+          <td>
+              <img src="{{ url_for('static', filename=p.image) }}" width="120" alt="{{ p.name }}" />
+          </td>
+          <td>{{ p.id }}</td>
+          <td>{{ p.name }}</td>
+          <td>{{ p.description }}</td>
+          <td>{{ "{:,.1f}".format(p.price) }} VND</td>
+      </tr>
+       {% endfor %}
+    </table>
+ </div>
+</body>
+</html>

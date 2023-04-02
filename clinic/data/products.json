@@ -1,0 +1,22 @@
+[{
+ "id": 1,
+ "name": "kham tong quat",
+ "description": "co loi cho suc khoe",
+ "price": 17000000,
+ "image":"image/p1.png",
+ "category_id": 1
+}, {
+ "id": 2,
+ "name": "kham rang",
+ "description": "chi phi thap",
+ "price": 37000000,
+ "image":"image/p2.png",
+ "category_id": 2
+}, {
+ "id": 3,
+ "name": "kham da lieu",
+"description": "rat an toan ",
+ "price": 24000000,
+ "image": "image/p3.png",
+ "category_id": 3
+}]
